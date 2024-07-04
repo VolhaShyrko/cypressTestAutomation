@@ -11,7 +11,7 @@ jobs:
         
     #run the tests    
       - name: Run Tests
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v2.3.6
         with:
           command: npx cypress run
           browser: chrome
