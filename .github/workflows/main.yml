@@ -1,4 +1,4 @@
-name: Actions
+name: Start Cypress Tests
 on:
  push:
    branches:
@@ -7,5 +7,8 @@ jobs:
  Cypress-Test:
    runs-on: ubuntu-latest
    steps:
-     - name: Checkout GitCode
-       uses: actions/checkout@v2
+     - name: Run Tests
+       uses: cypress-io/github-action@v4
+       with:
+         command: npx cypress run
+         browser: chrome
