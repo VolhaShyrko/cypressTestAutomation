@@ -5,9 +5,9 @@ jobs:
  install:
     runs-on: ubuntu-latest
     steps:
-    # install the dependencies from the root folder
+    # install npm dependencies and cache them
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         
     #run the tests    
       - name: Run Tests
