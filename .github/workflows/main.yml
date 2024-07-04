@@ -1,0 +1,16 @@
+name: Start Cypress Tests
+on: [push]
+
+jobs:
+ install:
+    runs-on: ubuntu-latest
+    steps:
+    # install npm dependencies and cache them
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+    #run the tests    
+      - name: Run Tests
+        uses: cypress-io/github-action@v6
+        with:
+          command: npx cypress run
