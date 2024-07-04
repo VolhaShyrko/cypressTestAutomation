@@ -13,5 +13,3 @@ jobs:
         with:
           command: npx cypress run
           browser: chrome
-          build: yarn build
-          start: yarn start
