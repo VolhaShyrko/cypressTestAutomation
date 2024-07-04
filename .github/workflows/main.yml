@@ -8,7 +8,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Run Tests
-       uses: cypress-io/github-action@v4
+       uses: cypress-io/github-action@v6
        with:
          command: npx cypress run
          browser: chrome
